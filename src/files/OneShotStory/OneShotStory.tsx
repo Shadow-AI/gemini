@@ -17,7 +17,8 @@ const OneShot: () => React.ReactElement = ( )=>{
                     <div className={"col"}>
                         <CentrePane/>
                     </div>
-                    <div className={"col-3"}>
+                    {/*col-0 means collapsed by default*/}
+                    <div className={"col-0"}>
                         <RightPane/>
                     </div>
                 </div>

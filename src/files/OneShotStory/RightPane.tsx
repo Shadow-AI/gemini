@@ -4,20 +4,6 @@
  */
 
 import React from "react";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faBars, faClose} from "@fortawesome/free-solid-svg-icons";
-
-const Collapser: () => React.ReactElement = () => {
-    return (<>
-        <div className={"collapseButton"}>
-            <button className={"btn btn-secondary"} data-bs-toggle={"collapse"} data-bs-target={"#rightpane-collapse"}
-                    aria-expanded={true}>
-                <FontAwesomeIcon icon={faBars}/>
-                <FontAwesomeIcon icon={faClose}/>
-            </button>
-        </div>
-    </>);
-}
 
 const ThemeSwitcher: () => React.ReactElement = () => {
     return (<>
@@ -47,10 +33,8 @@ const WorldInfo: () => React.ReactElement = () => {
 }
 
 const RightPane: () => React.ReactElement = () => {
-    return (<div id={"RightPane"}>
-        <Collapser/>
-        <div id={"rightpane-collapse"} className={"d-flex flex-column align-items-center collapse"}>
-
+    return (<div id={"rightpane-collapse"}>
+        <div id={"RightPane"} className={"d-flex flex-column align-items-center"}>
             <ThemeSwitcher/>
             <StoryImage/>
             <WorldInfo/>
