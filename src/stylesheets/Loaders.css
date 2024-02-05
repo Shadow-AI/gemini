@@ -1,0 +1,75 @@
+/*
+ * Copyright (c) 2024.
+ * Deepanshu
+ */
+
+.loading{
+
+}
+
+.jump1,.jump2, .jump3,.disappear1, .disappear2, .disappear3, .jumpDisappear1, .jumpDisappear2, .jumpDisappear3{
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.jump1{
+    animation: jump 1s ease 0s infinite;
+}
+.jump2{
+    animation: jump 1s ease 0.15s infinite;
+}
+.jump3 {
+    animation: jump 1s ease 0.3s infinite;
+}
+
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.disappear1{
+    animation: disappear 1s ease 0s infinite;
+}
+.disappear2{
+    animation: disappear 1s ease 0.15s infinite;
+}
+.disappear3 {
+    animation: disappear 1s ease 0.3s infinite;
+}
+
+@keyframes disappear {
+0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.jumpDisappear1{
+    animation: jumpDisappear 1s ease 0s infinite;
+}
+.jumpDisappear2{
+    animation: jumpDisappear 1s ease 0.15s infinite;
+}
+.jumpDisappear3 {
+    animation: jumpDisappear 1s ease 0.3s infinite;
+}
+
+@keyframes jumpDisappear {
+    0%, 100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+}

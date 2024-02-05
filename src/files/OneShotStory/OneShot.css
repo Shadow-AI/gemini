@@ -1,0 +1,89 @@
+/*
+ * Copyright (c) 2024.
+ * Deepanshu
+ */
+
+/*CENTRE PANE*/
+.story-area {
+    height: 75vh;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.message-card {
+    max-width: 60%;
+    width: fit-content;
+    margin: 1rem;
+}
+
+.message-card.attach-right {
+    margin-left: auto;
+
+    .card-body {
+        background-color: #c1c1c1;
+    }
+}
+
+.message-card.attach-left {
+    margin-right: auto;
+
+    .card-body {
+        background-color: #f1f1f1;
+    }
+}
+
+.prompt-area textarea {
+    overflow-y: hidden;
+    height: auto;
+    resize: none;
+    box-sizing: border-box;
+    transition: height .2s;
+    border: none;
+    &:focus {
+        outline: none;
+        border: none;
+        box-shadow: none;
+    }
+}
+
+.prompt-area button {
+    right: .15rem;
+    bottom: .15rem;
+    float: right;
+    margin: 1rem .4rem 0 0;
+}
+
+/*CENTRE PANE END*/
+
+/*RIGHT PANE*/
+#RightPane div.storyImage {
+    margin: 1rem;
+    border-radius: 100%;
+    border: 1px solid #000;
+
+    img {
+        border-radius: 100%;
+    }
+}
+
+#RightPane .worldInfo {
+    margin: 1rem;
+
+    textarea {
+        height: auto;
+        overflow-y: hidden;
+        resize: none;
+        box-sizing: border-box;
+        transition: all .2s;
+    }
+}
+
+#RightPane .themeSwitch{
+    margin: 1rem 1rem 5rem 1rem;
+}
+
+#RightPane .collapseButton{
+    margin: 1rem auto 2rem 1rem;
+    transform: translateX(-5rem);
+}
+/*RIGHT PANE END*/
