@@ -1,3 +1,23 @@
+# Story Generation by Gemini
+
+This idea was inspired by an old app called AiDungeon 4 years ago, which used generative AI to write stories with you.
+
+This project integrates with Google's Gemini API via MakerSuite.
+
+
+# Future
+
+I plan to implement a continuous story development cycle instead of a one-shot, which currently forms the base of my project.
+
+However, i will discard the LeftPane section, which allows navigation through different stories, owing to the fact that
+i am not planning to integrate the app with a database. An option here however is to store the data in the user's browser.
+
+I also plan to implement a more user-friendly interface, with a more intuitive design, and a more responsive layout.
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

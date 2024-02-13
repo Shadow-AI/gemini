@@ -4,6 +4,9 @@
  */
 
 /*CENTRE PANE*/
+.card-title{
+    margin: 1rem;
+}
 .story-area {
     height: 75vh;
     overflow: scroll;
@@ -33,12 +36,13 @@
 }
 
 .prompt-area textarea {
-    overflow-y: hidden;
+    overflow-y: scroll;
     height: auto;
     resize: none;
     box-sizing: border-box;
     transition: height .2s;
     border: none;
+    scrollbar-width: none;
     &:focus {
         outline: none;
         border: none;
@@ -76,7 +80,8 @@
 
     textarea {
         height: auto;
-        overflow-y: hidden;
+        overflow-y: scroll;
+        scrollbar-width: none;
         resize: none;
         box-sizing: border-box;
         transition: all .2s;
@@ -89,4 +94,21 @@
 /*RIGHT PANE END*/
 .collapsing{
     transition: none;
+}
+/*LEFT PANE START*/
+#LeftPane .appTitle{
+    margin-top: 1rem;
+}
+
+#LeftPane .storyItem{
+    margin: 2rem 0;
+
+    .card-body {
+        margin: auto 1rem;
+        padding: 0;
+
+        .card-title {
+            margin: 0;
+        }
+    }
 }
